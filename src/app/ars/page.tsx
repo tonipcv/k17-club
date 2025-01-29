@@ -86,13 +86,6 @@ export default function ARSPage() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <UserGroupIcon className="w-6 h-6 text-white flex-shrink-0" />
-                <div>
-                  <h4 className="text-white font-medium mb-1">Grupo VIP</h4>
-                  <p className="text-sm">Acesso ao grupo exclusivo no Telegram com outros membros</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
                 <ChatBubbleLeftRightIcon className="w-6 h-6 text-white flex-shrink-0" />
                 <div>
                   <h4 className="text-white font-medium mb-1">Suporte Dedicado</h4>
