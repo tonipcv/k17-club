@@ -1,18 +1,28 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
-import { Icon } from '@heroicons/react/24/outline';
+import { 
+  ChartBarIcon, 
+  BellAlertIcon, 
+  UserGroupIcon,
+  DocumentCheckIcon 
+} from '@heroicons/react/24/outline';
+import CandlestickChart from '@/components/CandlestickChart';
 
 export default function ProductPage() {
   return (
     <div className="min-h-screen bg-black font-helvetica">
       <Header />
-      {/* Hero Section */}
-      <div className="h-[30vh] md:h-[40vh] flex items-center justify-center bg-zinc-900">
-        <div className="text-center px-4">
-          <h1 className="text-xl md:text-4xl font-bold mb-2 md:mb-4 bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent">
+      <div className="h-[30vh] md:h-[40vh] flex items-center justify-center bg-zinc-900 relative overflow-hidden">
+        {/* Background Chart */}
+        <div className="absolute inset-0 opacity-5">
+          <CandlestickChart />
+        </div>
+        
+        <div className="text-center px-4 relative z-10">
+          <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent">
             {/* Nome do produto */}
           </h1>
-          <p className="text-sm md:text-lg text-zinc-400">
+          <p className="text-sm md:text-xl text-zinc-400">
             {/* Subtítulo */}
           </p>
         </div>
@@ -44,12 +54,12 @@ export default function ProductPage() {
 
           {/* CTA Section */}
           <div className="bg-zinc-900 rounded p-5 md:p-8 border border-zinc-800">
-            <h2 className="text-base md:text-xl font-bold text-white mb-4 md:mb-6 text-center">
+            <h2 className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6 text-center">
               O que você recebe
             </h2>
             <ul className="text-zinc-400 mb-6 md:mb-8 space-y-4 md:space-y-6 max-w-md mx-auto">
               <li className="flex items-start gap-3 md:gap-4">
-                <Icon className="w-4 h-4 md:w-5 md:h-5 text-white flex-shrink-0 mt-0.5" />
+                <ChartBarIcon className="w-4 h-4 md:w-5 md:h-5 text-white flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs md:text-sm font-medium text-white mb-0.5 md:mb-1">
                     {/* Título do item */}
@@ -59,6 +69,7 @@ export default function ProductPage() {
                   </p>
                 </div>
               </li>
+              {/* ... outros itens com seus respectivos ícones ... */}
             </ul>
 
             {/* Botões */}
