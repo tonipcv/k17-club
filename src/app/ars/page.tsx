@@ -117,4 +117,9 @@ export default function ARSPage() {
       </main>
     </div>
   );
+}
+
+export const metadata = {
+  title: 'ARS - Análises e Recomendações Semanais | K17',
+  description: 'Receba análises profundas e recomendações semanais para o mercado cripto. Maximize seus resultados com insights estratégicos da equipe K17.',
 } 

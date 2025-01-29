@@ -115,4 +115,9 @@ export default function FIPPage() {
       </main>
     </div>
   );
+}
+
+export const metadata = {
+  title: 'FIP - Formação para Investidor Profissional | K17',
+  description: 'Transforme-se em um investidor profissional com nossa formação completa em criptomoedas. Do básico ao avançado.',
 } 

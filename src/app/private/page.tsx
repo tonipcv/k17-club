@@ -118,4 +118,9 @@ export default function PrivatePage() {
       </main>
     </div>
   );
+}
+
+export const metadata = {
+  title: 'PRIVATE - Grupo Exclusivo de Elite | K17',
+  description: 'Acesse estratégias avançadas e mentorias personalizadas com os maiores especialistas do mercado cripto.',
 } 

@@ -117,4 +117,9 @@ export default function MemePage() {
       </main>
     </div>
   );
+}
+
+export const metadata = {
+  title: 'Projeto MEME - Estratégias para Moedas Meme | K17',
+  description: 'Aprenda a identificar e lucrar com moedas meme antes do hype. Estratégias comprovadas para maximizar seus ganhos.',
 } 
