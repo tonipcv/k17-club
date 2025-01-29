@@ -6,18 +6,23 @@ import {
   ChatBubbleLeftRightIcon 
 } from '@heroicons/react/24/outline';
 import Header from '@/components/Header';
+import CandlestickChart from '@/components/CandlestickChart';
 
 export default function ARSPage() {
   return (
     <div className="min-h-screen bg-black font-helvetica">
       <Header />
-      {/* Hero Section */}
-      <div className="h-[40vh] flex items-center justify-center bg-zinc-900">
-        <div className="text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">
+      <div className="h-[30vh] md:h-[40vh] flex items-center justify-center bg-zinc-900 relative overflow-hidden">
+        {/* Background Chart */}
+        <div className="absolute inset-0 opacity-5">
+          <CandlestickChart />
+        </div>
+        
+        <div className="text-center px-4 relative z-10">
+          <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent">
             ARS
           </h1>
-          <p className="text-xl text-zinc-400">
+          <p className="text-sm md:text-xl text-zinc-400">
             Análises e Recomendações Semanais
           </p>
         </div>

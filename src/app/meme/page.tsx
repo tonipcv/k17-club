@@ -14,10 +14,10 @@ export default function MemePage() {
       {/* Hero Section */}
       <div className="h-[40vh] flex items-center justify-center bg-zinc-900">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">
+          <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent">
             PROJETO MEME
           </h1>
-          <p className="text-xl text-zinc-400">
+          <p className="text-sm md:text-xl text-zinc-400">
             Estratégias para Moedas Meme
           </p>
         </div>
